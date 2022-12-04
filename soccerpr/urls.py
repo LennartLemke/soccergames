@@ -18,6 +18,7 @@ from django.urls import path
 from django.views import generic 
 
 urlpatterns = [
-    path("", generic.TemplateView.as_view(template_name="home.html")),
+    path("", generic.TemplateView.as_view(template_name="index.html")),
+    #path('matches/', include('machtes.urls')),
     path('admin/', admin.site.urls),
 ]
